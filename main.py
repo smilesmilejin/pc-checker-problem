@@ -12,7 +12,7 @@ def is_BST(node):
     pass
 
 
-'''
+r'''
            6
          /   \
         /     \
@@ -25,7 +25,7 @@ Valid: True
 tree = Node(6, Node(3, Node(1), Node(5)), Node(8, None, Node(9)))
 assert is_BST(tree) == True
 
-'''
+r'''
        5
       / \
      7   9
@@ -35,7 +35,7 @@ Valid: False
 tree = Node(5, Node(7), Node(9))
 assert is_BST(tree) == False
 
-'''
+r'''
        5
       / \
      3   9
@@ -45,7 +45,7 @@ Valid: True
 tree = Node(5, Node(3), Node(9))
 assert is_BST(tree) == True
 
-'''
+r'''
        5
       / \
      3   4
@@ -55,7 +55,7 @@ Valid: False
 tree = Node(5, Node(3), Node(4))
 assert is_BST(tree) == False
 
-'''
+r'''
            6
          /   \
         /     \
@@ -70,7 +70,7 @@ Valid: False
 tree = Node(6, Node(3, Node(1), Node(5, Node(7))), Node(8))
 assert is_BST(tree) == False
 
-'''
+r'''
            5
          /   \
         /     \
