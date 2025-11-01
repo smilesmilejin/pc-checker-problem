@@ -11,6 +11,62 @@ def is_BST(node):
     # Your solution here!
     pass
 
+    # check if left node is smaller than root
+      # if not
+        # return false
+    # check if right node is smaller than root
+      # if not
+        # return false
+
+  # return true
+
+
+
+  # current node starts with BST root
+
+  # queue
+  # add the current node to the queue
+
+  # while queue is not empty:
+    # add left node to queue
+    # add right node to queue
+    # current pop the first element from queue
+
+    # if left > current:
+      # return false
+
+    # if right < current:
+      # return false
+
+  # return True
+
+    from collections import deque
+    queue = deque()
+    queue.append(node)
+
+    # print('queue: ', queue)
+    # print('queue value: ', queue[0].value)
+
+    # current = node
+
+    while queue:
+      current_node = queue.popleft()
+
+      # print('current_node value: ', current_node.value)
+
+      if current_node.left and current_node.left.value > current_node.value:
+          return False     
+      if current_node.right and current_node.right.value < current_node.value:
+          return False
+      
+      if current_node.left:
+        queue.append(current_node.left)
+      if current_node.right:
+          queue.append(current_node.right)
+
+
+    return True
+
 
 r'''
            6
